@@ -1,18 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <h3>
+          native input
+      </h3>
+      <div><input type="text" class="pl-input"></div>
+      <h3>
+          <el-button>element ui</el-button>
+      </h3>
+      <h3>
+          har-ui
+      </h3>
+      <div>
+          <har-button/>
+          <har-input/>
+      </div>
+      <div>
+        <Button95>按钮1</Button95>
+        <Window95>
+          <WindowContent95>
+            <Cutout95 class="mycutout" :shadow="true">156156561</Cutout95>
+          </WindowContent95>
+        </Window95>
+      </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
