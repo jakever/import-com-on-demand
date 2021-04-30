@@ -5,36 +5,26 @@ module.exports = {
   presets: ["@vue/app", ["@babel/preset-env", { "modules": false }]],
   plugins: [
     [
-      // "component",
-      "import",
+      "component",
+      // "import",
       {
-        libraryName: "har-awesome-ui",
+        libraryName: "dm-ui",
         libraryDirectory: "lib",
-        styleLibraryDirectory: "lib",
+        // "styleLibraryName": "theme-chalk",
+        // styleLibraryDirectory: "lib",
         // style: (name) => {
-        //     console.log('style-->>', name)
-        //     return `css/${name}.css`
+        //     return `har-awesome-ui/lib/${name}.css`
         // },
-        // style: true,
+        // style: 'css',
         // customName: (name) => {
         //     console.log('customName-->>', name)
-        //     return `har-awesome-ui/lib/${name}/index.js`
+        //     return `har-awesome-ui/lib/${name}`
         // },
         // customStyleName: (name) => {
         //     console.log('style-->>', name)
-        //     return `har-awesome-ui/lib/css/${name}.css`
+        //     return `har-awesome-ui/lib/${name}/index.css`
         // }
       }
     ]
   ]
-  // plugins: [
-  //   [
-  //     "import",
-  //     {
-  //       libraryName: "har-power-ui",
-  //       libraryDirectory: "components",
-  //       camel2DashComponentName: false
-  //     }
-  //   ]
-  // ]
 }
